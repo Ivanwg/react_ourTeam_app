@@ -15,10 +15,11 @@ const CardsList = () => {
   const totalCount = useSelector((state: RootState) => state.collegues.total);
   const status = useSelector((state: RootState) => state.collegues.status);
   const likesList = useSelector((state: RootState) => state.user.userData.likesList);
+  const mounted = useSelector((state: RootState) => state.collegues.mounted);
   const dispatch = useAppDispatch();
   useEffect(() => {
-    !collegues.length && dispatch(fetchCollegues());
-  }, []);
+    !collegues.length && mounted && dispatch(fetchCollegues());
+  }, [mounted]);
 
   const onClick = (e: React.MouseEvent) => {
     e.preventDefault();

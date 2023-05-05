@@ -1,6 +1,6 @@
 import React, {Suspense, useEffect} from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import { useAppDispatch } from './store/store';
+import { RootState, useAppDispatch } from './store/store';
 import { getStorageData } from './store/slices/user';
 import { getStorageCollegues } from './store/slices/collegues';
 import ScrollToTop from './hooks/scrollToTop';
@@ -13,6 +13,7 @@ import Spinner from './components/Spinner';
 import Detail from './pages/Detail';
 import Access from './components/Access';
 import Register from './pages/Register';
+import { useSelector } from 'react-redux';
 
 
 function App() {

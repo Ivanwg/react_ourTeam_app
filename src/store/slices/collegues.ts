@@ -71,7 +71,6 @@ export const colleguesSlice = createSlice({
           state.collegues = parsed.collegues;
           state.nextPage = parsed.nextPage;
           state.total = parsed.total;
-          
         }
       }
       state.mounted = true;
