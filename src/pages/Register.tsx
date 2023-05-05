@@ -1,0 +1,11 @@
+import Form from '../components/Form';
+
+const Register = () => {
+  return ( 
+    <div className='contentAllScreen'>
+      <Form type='register' />
+    </div>
+   );
+}
+ 
+export default Register;

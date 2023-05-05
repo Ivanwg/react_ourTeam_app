@@ -1,0 +1,25 @@
+$color: #F8F8F8;
+
+.btn {
+  padding: 7px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $color;
+  border: 1px solid $color;
+  border-radius: 8px;
+  transition-property: color, background;
+  transition-duration: .3s;
+  transition-timing-function: ease;
+}
+
+@media(min-width: 768px) {
+  .btn {
+    &:hover {
+      color: #512689;
+      background: $color;
+    }
+  }
+}
