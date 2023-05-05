@@ -40,7 +40,7 @@ const CardsList = () => {
   return ( 
     <>
       {
-        status === 'load' ? <Spinner /> :
+        status !== 'load' ? <Spinner additionalClassNames={['transformedUp']} /> :
         <div className={styles.wrap}>
           <ul className={styles.list}>
             {

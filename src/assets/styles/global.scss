@@ -214,6 +214,8 @@ button {
 
 
 
+
+
 @media(min-width: 768px) {
   .title {
     font-size: 64px;
@@ -231,6 +233,10 @@ button {
         color: $purple;
       }
     }
+  }
+  .transformedUp {
+    position: relative;
+    transform: translateY(-32px);
   }
 }
 
